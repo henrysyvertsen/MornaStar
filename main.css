@@ -1,36 +1,86 @@
-
-.body { 
-
- }
-
-.morna_header { 
-color: #FE539B;
-font-size: 10pc;
-text-align: center;
- }
-
- .opening_image {
- 	position: center;
- 	padding: 200px 200px 200px 200px;
- }
-
- .opening_memorial { 
-	border: 5px solid;
-	border-color: #FFA2CA;
-	border-bottom: 1400px;
-	border-style: initial;
-	text-align: center;
-	background-color: #FF86B9
-;
-	color: white;
-
- }
-
-.memorial_speech {
-	padding: 50px 70px 70px 50px;
+html {
+	box-sizing: border-box;
 }
 
-#memorial_header {
+body {
+	animation-name: fadeIn;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	font-family: sans-serif;
+	opacity: 0;
+}
+
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*[data-scroll-fade] {
+	opacity: 0;
+}
+
+[data-scroll-fade].scrolled-into-view {
+	animation: .5s fadeIn forwards;	
+}
+*/
+.morna-header {
+	color: #FE539B;
+	font-size: 50px;
+	padding: 40px 5%;
+	text-align: center;
+}
+
+@media (min-width: 800px) {
+	.morna-header {
+		font-size: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.morna-header {
+		font-size: 120px;
+	}
+}
+
+.opening-image {
+ 	padding: 5%;
+}
+
+.opening-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.opening-memorial { 
+	border: 14px solid #FFA2CA;
+	text-align: center;
+	background-color: #FF86B9;
+	color: white;
+}
+
+.memorial-header {
 	font-size: 44px;
 }
 
+.memorial-speech {
+	padding: 50px 70px 70px 50px;
+}
+
+.title {
+	font-size: 14px;
+	padding-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
