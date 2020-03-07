@@ -1,0 +1,36 @@
+
+.body { 
+
+ }
+
+.morna_header { 
+color: #FE539B;
+font-size: 10pc;
+text-align: center;
+ }
+
+ .opening_image {
+ 	position: center;
+ 	padding: 200px 200px 200px 200px;
+ }
+
+ .opening_memorial { 
+	border: 5px solid;
+	border-color: #FFA2CA;
+	border-bottom: 1400px;
+	border-style: initial;
+	text-align: center;
+	background-color: #FF86B9
+;
+	color: white;
+
+ }
+
+.memorial_speech {
+	padding: 50px 70px 70px 50px;
+}
+
+#memorial_header {
+	font-size: 44px;
+}
+
